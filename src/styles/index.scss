@@ -44,15 +44,20 @@ p {
   width: 60%;
 }
 
+#Bio {
+  margin-left: -10px;
+}
+
 #CapstoneCard {
   width: 100%;
   height: 250px;
+
+  @include flex();
 }
 
 #ActiveCard {
   height: 150px;
   width: 32%;
-  margin-bottom: 10px;
 }
 
 #Portfolio {
@@ -65,6 +70,10 @@ p {
     margin-top: 20px;
     // background: $test;
   }
+
+  .capstone-container {
+    margin-top: 20px;
+  }
 }
 
 // Classes
@@ -74,6 +83,8 @@ p {
   border: 1px solid $pop;
   color: $pop;
   padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
 
   .card-title {
     color: $pop;
