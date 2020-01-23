@@ -34,7 +34,10 @@ class Portfolio extends Component {
 			}
 		}
 		fetchData()
+		console.log(this.state)
 	}
+
+
 
 	// pageUp = () => {
 	// 	if (this.state.page > 0) return this.setState({ page: this.state.page-- })

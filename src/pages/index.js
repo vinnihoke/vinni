@@ -10,6 +10,7 @@ function Index() {
     <main>
       <Helmet>
         <title>Vinni Hoke - Full-Stack Engineer</title>
+        <meta name="viewport" content="width=device-width;"></meta>
       </Helmet>
       <section id="Entry">
         <Bio />
