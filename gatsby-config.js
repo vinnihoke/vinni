@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
+    title: 'Vinni Hoke Portfolio',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatbsy + Node.js (TypeScript)',
+        name: 'Vinni Hoke Portfolio',
+        short_name: 'Built with Gatsby',
         start_url: '/',
         icon: 'src/images/gatsby-icon.png',
       },

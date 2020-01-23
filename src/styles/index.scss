@@ -1,0 +1,88 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// Helper tags
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $dark;
+  box-sizing: border-box;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  @include flex();
+  margin-top: 200px;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  @include flex();
+}
+
+h1 {
+  font-size: 45px;
+  color: $light;
+  text-align: left;
+}
+h3 {
+  text-align: left;
+  margin-top: 1.5em;
+  color: $light;
+}
+p {
+  text-align: left;
+  font-size: 16px;
+  color: $light;
+}
+
+// ID's
+#Entry {
+  width: 60%;
+}
+
+#CapstoneCard {
+  width: 100%;
+  height: 250px;
+}
+
+#ActiveCard {
+  height: 150px;
+  width: 32%;
+  margin-bottom: 10px;
+}
+
+#Portfolio {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -10px;
+
+  .active-container {
+    @include flex(row wrap, space-between);
+    margin-top: 20px;
+    // background: $test;
+  }
+}
+
+// Classes
+.card-helper {
+  font-family: "Lucida Console", Courier, monospace;
+  border-radius: 5px;
+  border: 1px solid $pop;
+  color: $pop;
+  padding: 15px;
+
+  .card-title {
+    color: $pop;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .card-text {
+    color: $pop;
+    font-size: 12px;
+  }
+}

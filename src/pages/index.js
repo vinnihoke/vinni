@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import '../styles/index.css';
+import '../styles/index.scss';
 import Bio from '../components/Bio';
+import Portfolio from '../components/Portfolio'
 
 function Index() {
   return (
@@ -9,7 +10,10 @@ function Index() {
       <Helmet>
         <title>Vinni Hoke - Full-Stack Engineer</title>
       </Helmet>
-      <Bio />
+      <section id="Entry">
+        <Bio />
+        <Portfolio />
+      </section>
     </main>
   )
 }
