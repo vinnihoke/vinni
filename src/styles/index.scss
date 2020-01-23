@@ -3,12 +3,6 @@
 @import "./mixins.scss";
 
 // Helper tags
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background: $dark;
   box-sizing: border-box;
