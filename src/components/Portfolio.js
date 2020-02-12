@@ -16,9 +16,6 @@ class Portfolio extends Component {
 		}
 	}
 
-
-
-
 	componentDidMount() {
 		const fetchData = async () => {
 			try {
@@ -55,7 +52,7 @@ class Portfolio extends Component {
 						return <CapstoneCard key={project.id} {...project} />
 					})}
 				</div>
-				<h3>All Projects</h3>
+				<h3>Recent Projects</h3>
 				<div className="active-container">
 					{this.state.active.map(project => {
 						return <ActiveCard key={project.id} {...project} />

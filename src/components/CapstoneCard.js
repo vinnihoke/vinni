@@ -11,7 +11,6 @@ const CapstoneCard = (props) => {
 					<p className="card-title">{props.owner.login}</p>
 					<p className="card-title">{props.name}</p>
 					<p className="card-text">{props.language}</p>
-					<p className="card-text">{props.license.name}</p>
 					<p className="card-text">{props.id}</p>
 					<p className="card-text">{props.size}kb</p>
 				</Col>

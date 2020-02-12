@@ -10,7 +10,8 @@ const Bio = () => {
 			</Tooltip>
 			<a href="https://www.linkedin.com/in/vinnihoke/" target="_blank"><Tag color="#87d068">Accepting Offers</Tag></a>
 			<h3></h3>
-			<p>Current fully remote Lambda School Team Lead. Technologies include HTML/CSS, JavaScript, SCSS, React, Svelte, Gatsby, Express, Knex, Sqlite. Currently learning GraphQL, and Python. Business administration knowledge with an emphasis in process management. Previous design experience.</p>
+			<p>Current fully remote Lambda School Team Lead. Core technologies include Javascript and React. Business administration knowledge with an emphasis in process management with previous design experience.</p>
+			<p>Looking for full-stack, front-end, or QA roles.</p>
 		</section>
 	)
 }
