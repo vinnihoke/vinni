@@ -1,17 +1,41 @@
 import React from 'react'
 import "../styles/index.scss"
-import { Tag, Tooltip } from "antd"
+import { Popup } from 'semantic-ui-react'
 
 const Bio = () => {
 	return (
 		<section id="Bio">
-			<Tooltip placement="left" title="Portfolio is still in development. Thanks for visiting!">
-				<h1>Vinni Hoke</h1>
-			</Tooltip>
-			<a href="https://www.linkedin.com/in/vinnihoke/" target="_blank"><Tag color="#87d068">Accepting Offers</Tag></a>
-			<h3></h3>
-			<p>Current fully remote Lambda School Team Lead. Core technologies include Javascript and React. Business administration knowledge with an emphasis in process management with previous design experience.</p>
-			<p>Looking for full-stack, front-end, or QA roles.</p>
+			<Popup trigger={<h1>Vinni Hoke</h1>} content="Portfolio still in development, thanks for visiting!" basic />
+			<a href="https://www.linkedin.com/in/vinnihoke/" target="_blank"><span className="ui green label">Accepting Offers</span></a>
+			<h3>👋 Hello there! Connect with me on <a href="https://twitter.com/ccvinni">Twitter</a> or <a href="https://www.linkedin.com/in/vinnihoke/">LinkedIn</a>.</h3>
+			<div class="ui inverted segment">
+				<div role="list" class="ui divided inverted relaxed list">
+					<div role="listitem" class="item">
+						<div class="content">
+							<div class="header">Current Role</div>
+							Fully remote Lambda School Team Lead.
+						</div>
+					</div>
+					<div role="listitem" class="item">
+						<div class="content">
+							<div class="header">Core Technologies</div>
+							HTML/SCSS, JavaScript, React.
+						</div>
+					</div>
+					<div role="listitem" class="item">
+						<div class="content">
+							<div class="header">Previous Experience</div>
+							Business administration with an emphasis in process management. Previous design experience.
+						</div>
+					</div>
+					<div role="listitem" class="item">
+						<div class="content">
+							<div class="header">Looking For</div>
+							Full-stack, front-end, or QA roles. Interested in internships, and full-time roles.
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	)
 }

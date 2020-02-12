@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import 'antd/dist/antd.css';
+import 'semantic-ui-css/semantic.min.css'
 import '../styles/index.scss';
 import Bio from '../components/Bio';
 import Portfolio from '../components/Portfolio'

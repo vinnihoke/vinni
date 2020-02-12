@@ -3,7 +3,6 @@
   "name": "gatsby-starter-default",
   "version": "1.0.0",
   "dependencies": {
-    "antd": "^3.26.7",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.14",
@@ -17,6 +16,8 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-hook-form": "^4.6.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
