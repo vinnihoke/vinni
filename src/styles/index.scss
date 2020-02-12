@@ -9,6 +9,10 @@ body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
   margin-top: 200px;
+
+  @media (max-width: $mobile){
+    margin-top: 50px;
+  }
 }
 
 main {
