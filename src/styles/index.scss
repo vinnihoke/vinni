@@ -37,6 +37,10 @@ p {
 // ID's
 #Entry {
   width: 60%;
+
+  @media (max-width: $mobile){
+    width: 80%;
+  }
 }
 
 #Bio {
@@ -53,6 +57,10 @@ p {
 #ActiveCard {
   height: 150px;
   width: 32%;
+
+  @media (max-width: $mobile){
+    width: 48%;
+  }
 }
 
 #Portfolio {
