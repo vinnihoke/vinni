@@ -8,6 +8,7 @@ const ActiveCard = (props) => {
 			<p className="card-text">{props.language}</p>
 			<p className="card-text">{props.id}</p>
 			<p className="card-text">{props.size}kb</p>
+			<p className="card-text">{props.description}</p>
 		</div>
 	)
 }

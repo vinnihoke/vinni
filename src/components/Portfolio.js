@@ -1,3 +1,5 @@
+// @ts-check
+
 import React, { Component } from 'react'
 import axios from 'axios'
 import ActiveCard from './ActiveCard.js';
@@ -5,15 +7,12 @@ import CapstoneCard from './CapstoneCard.js'
 import '../styles/index.scss'
 
 class Portfolio extends Component {
-	constructor() {
-		super()
-		this.state = {
-			capstone: [],
-			active: [],
-			profile: {},
-			per_page: 15,
-			page: 0
-		}
+	state = {
+		capstone: [],
+		active: [],
+		profile: {},
+		per_page: 15,
+		page: 0
 	}
 
 	componentDidMount() {
@@ -25,23 +24,48 @@ class Portfolio extends Component {
 				const capstone = await axios.get('https://api.github.com/users/vinnihoke/subscriptions')
 				const active = await axios.get(`https://api.github.com/users/vinnihoke/repos?page=${this.state.page}&per_page=${this.state.per_page}`)
 				this.setState({ capstone: capstone.data, active: active.data })
-				console.log(this.state)
 			} catch (e) {
 				console.log(e.message)
 			}
 		}
 		fetchData()
-		console.log(this.state)
+	}
+
+	componentDidUpdate(prevProps) {
+		if (this.state.page !== prevProps.page) {
+			const fetchData = async () => {
+				const active = await axios.get(`https://api.github.com/users/vinnihoke/repos?page=${this.state.page}&per_page=${this.state.per_page}`)
+				this.setState({ active: active.data })
+			}
+			fetchData()
+		}
 	}
 
 
 
-	// pageUp = () => {
-	// 	if (this.state.page > 0) return this.setState({ page: this.state.page-- })
-	// }
-	// pageDown = () => {
-	// 	if (this.state.page !== Math.floor(this.state.profile.public_repos / this.state.per_page)) this.setState({ page: this.state.page++ })
-	// }
+	pageUp = () => {
+		if (this.state.page > 1) {
+			this.setState({ page: this.state.page - 1 })
+		} else {
+			this.setState({ page: Math.floor(this.state.profile.public_repos / this.state.per_page) })
+		}
+		console.log(this.state)
+	}
+	pageDown = () => {
+		if (this.state.page < Math.floor(this.state.profile.public_repos / this.state.per_page)) {
+			this.setState({ page: this.state.page + 1 })
+		} else {
+			this.setState({ page: 1 })
+		}
+		console.log(this.state)
+	}
+	pageCount = () => {
+		if (this.state.page === Math.floor(this.state.profile.public_repos / this.state.per_page)) {
+			return <p>Showing Latest Projects</p>
+		} else {
+			return <p>{this.state.page} of {Math.floor(this.state.profile.public_repos / this.state.per_page)}</p>
+		}
+	}
 
 	render() {
 		return (
@@ -57,8 +81,11 @@ class Portfolio extends Component {
 					{this.state.active.map(project => {
 						return <ActiveCard key={project.id} {...project} />
 					})}
-					{/* <button onClick={this.pageDown}>◁</button>
-					<button onClick={this.pageUp}>▷</button> */}
+				</div>
+				<div>
+					<button className="ui button" onClick={this.pageUp}>◀︎</button>
+					<button className="ui button" onClick={this.pageDown}>▶︎</button>
+					{this.pageCount()}
 				</div>
 			</section>
 		)
