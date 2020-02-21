@@ -31,7 +31,7 @@ const Bio = () => {
 					<div role="listitem" className="item">
 						<div className="content">
 							<div className="header">Looking For</div>
-							Full-stack, front-end, or QA roles. Interested in internships, and full-time roles.
+							Full-stack, front-end, or QA. Interested in internships, and full-time roles.
 						</div>
 					</div>
 				</div>
