@@ -6,7 +6,7 @@ const Bio = () => {
 	return (
 		<section id="Bio">
 			<Popup trigger={<h1>Vinni Hoke</h1>} content="Portfolio still in development, thanks for visiting!" basic />
-			<a href="https://www.linkedin.com/in/vinnihoke/" target="_blank"><span className="ui yellow label">Accepting Offers</span></a>
+			<a href="https://www.linkedin.com/in/vinnihoke/" target="_blank"><span className="ui blue label">Accepting Offers</span></a>
 			<h3>👋 Hello there! Connect with me on <a href="https://twitter.com/ccvinni">Twitter</a> or <a href="https://www.linkedin.com/in/vinnihoke/">LinkedIn</a>.</h3>
 			<div className="ui inverted segment">
 				<div role="list" className="ui divided inverted relaxed list">
