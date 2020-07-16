@@ -1,23 +1,30 @@
 import React from 'react';
 
+export default function CapstoneCard(props) {
+	const openWindow = () => {
+		window.open(`${props.html_url}`, '_blank');
+	};
 
-const CapstoneCard = (props) => {
 	return (
-		<article id="CapstoneCard" className="card-helper" onClick={() => window.open(`${props.html_url}`, "_blank")}>
-			<section className="ui relaxed two column grid">
-				<div className="column">
-					<p className="card-title">{props.owner.login}</p>
-					<p className="card-title">{props.name}</p>
+		<div
+			className="capstoneCard"
+			role="button"
+			tabIndex={0}
+			onClick={openWindow}
+			onKeyDown={openWindow}
+		>
+			<section>
+				<div>
+					<h3>{props.name}</h3>
+					<h4>{props.owner.login}</h4>
 					<p className="card-text">{props.language}</p>
 					<p className="card-text">{props.id}</p>
 					<p className="card-text">{props.size}kb</p>
 				</div>
-				<div className="column">
+				<div>
 					<p className="card-text">{props.description}</p>
 				</div>
 			</section>
-		</article>
-	)
+		</div>
+	);
 }
-
-export default CapstoneCard

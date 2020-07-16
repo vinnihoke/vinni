@@ -1,0 +1,19 @@
+@import '../index.scss';
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.headerPhoto {
+	/* The image used */
+	background-image: url('../../images/portfolio-site-header.jpg');
+
+	/* Full height */
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
