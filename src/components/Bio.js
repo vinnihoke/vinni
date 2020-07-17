@@ -30,7 +30,7 @@ export default function Bio() {
 						<i className="fab fa-html5 fa-5x" />
 						<i className="fab fa-css3 fa-5x" />
 					</div>
-					<p>Other Technologies</p>
+					<p>Other Technologies/Skills</p>
 					<ul className="otherSkills">
 						<li>Jest</li>
 						<li>Postgres</li>
@@ -189,11 +189,11 @@ export default function Bio() {
 					<div className="hiddenContent">
 						<h4>Description</h4>
 						<p>
-							As a Lambda School student during a team project, we
-							ran into a situation that required basic string
-							encryption, decryption, and validation. The existing
-							tools felt like overkill so I decided to write a NPM
-							package that everyone could use.
+							While developing an API I ran into a situation that
+							required basic string encryption, decryption, and
+							validation. The existing tools felt like overkill so
+							I decided to write a NPM package that everyone could
+							use.
 						</p>
 						<h4>What did I do?</h4>
 						<p>
