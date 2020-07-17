@@ -76,6 +76,10 @@
   max-width: 700px;
 }
 
+.hiddenContent {
+  display: none;
+}
+
 .project {
   padding: 32px 0;
   height: 150px;
@@ -84,10 +88,14 @@
   padding: 24px;
   box-shadow: 0px 5px 15px $light;
   transition: 200ms;
-  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 10px 15px 5px silver;
+    height: 400px;
+  }
+
+  &:hover .hiddenContent {
+    display: block;
   }
 }
 
@@ -95,9 +103,29 @@
 .pressed,
 .time,
 .purecrypt {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+}
+
+.techItem {
+  margin: 4px;
+}
+
+.buttonGroup {
+  position: absolute;
+  right: 24px;
+  bottom: 32px;
+
+  & > a {
+    padding: 8px 16px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: inherit;
+
+    i {
+      margin-right: 8px;
+    }
+  }
 }
 
 .wells {
@@ -105,7 +133,7 @@
 }
 
 .pressed {
-  background-color: green;
+  background-color: MediumSeaGreen;
   color: white;
 }
 
@@ -114,6 +142,6 @@
   color: white;
 }
 .purecrypt {
-  background-color: red;
+  background-color: tomato;
   color: white;
 }

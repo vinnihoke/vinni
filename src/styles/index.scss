@@ -10,27 +10,42 @@ html {
   width: 100%;
   max-width: $desktop;
   margin: 0 auto;
-  overscroll-behavior: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: bolder;
+  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: bolder;
   text-decoration: underline $pop;
+  margin-bottom: 24px;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 
 h4 {
   font-size: 1.25rem;
   font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 8px;
 }
 
 a {

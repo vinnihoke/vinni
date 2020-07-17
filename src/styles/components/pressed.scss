@@ -10,6 +10,14 @@
 
 .info {
   @include container();
+  height: 150px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.techItem {
+  margin: 4px;
 }
 
 .image {

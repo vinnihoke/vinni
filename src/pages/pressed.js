@@ -6,7 +6,7 @@ export default function Pressed() {
 	return (
 		<main className="root">
 			<Helmet>
-				<title>Vinni Hoke - Full-Stack Engineer</title>
+				<title>Vinni Hoke - Full Stack Engineer</title>
 				<script
 					src="https://kit.fontawesome.com/438cae8cec.js"
 					crossOrigin="anonymous"
@@ -17,19 +17,17 @@ export default function Pressed() {
 					<a href="/">
 						<i className="fas fa-arrow-circle-left fa-lg" />
 					</a>
-
 					<h3>Pressed Juicery</h3>
 					<div>
-						<i className="fab fa-js fa-lg" />
-						<i className="fab fa-vuejs fa-lg" />
-						<i className="fab fa-sass fa-lg" />
-						<i className="fab fa-html5 fa-lg" />
+						<i className="fab fa-js fa-lg techItem" />
+						<i className="fab fa-vuejs fa-lg techItem" />
+						<i className="fab fa-sass fa-lg techItem" />
+						<i className="fab fa-html5 fa-lg techItem" />
 					</div>
 					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Nihil quis praesentium laudantium obcaecati neque
-						explicabo consectetur enim, rerum officia labore omnis
-						ad, doloremque sit blanditiis!
+						The Pressed Juicery mobile app is still in development.
+						Because of that I cannot share images or screen shots.
+						An updated link will be added when available.
 					</div>
 				</div>
 			</div>

@@ -8,7 +8,7 @@ export default function Index() {
 	return (
 		<main>
 			<Helmet>
-				<title>Vinni Hoke - Full-Stack Engineer</title>
+				<title>Vinni Hoke - Full Stack Engineer</title>
 				<script
 					src="https://kit.fontawesome.com/438cae8cec.js"
 					crossOrigin="anonymous"

@@ -30,80 +30,201 @@ export default function Bio() {
 						<i className="fab fa-html5 fa-5x" />
 						<i className="fab fa-css3 fa-5x" />
 					</div>
-					<p>Other Skills</p>
+					<p>Other Technologies</p>
 					<ul className="otherSkills">
 						<li>Jest</li>
-						<li>SQL</li>
 						<li>Postgres</li>
 						<li>Software Architecture</li>
 						<li>Remote Collaboration</li>
 						<li>Design Experience</li>
 						<li>Agile Methodology</li>
-						<li>Customer Support</li>
 					</ul>
 				</div>
 			</div>
 			<div className="projects">
 				<h3>Professional Experience</h3>
-				<a href="/pressed">
-					<div className="pressed project">
-						<h3>Pressed Juicery</h3>
-						<p>Full Stack Engineer</p>
-						<i className="fab fa-js fa-md" />
-						<i className="fab fa-vuejs fa-md" />
-						<i className="fab fa-sass fa-md" />
-						<i className="fab fa-html5 fa-md" />
-						<i className="fab fa-css3 fa-md" />
-					</div>
-				</a>
-				<a
-					href="https://wellsupholstery.now.sh/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="wells project">
-						<h3>Wells Upholstery</h3>
-						<p>Acting CTO</p>
-						<i className="fab fa-js fa-md" />
-						<i className="fab fa-react fa-md" />
-						<i className="fab fa-sass fa-md" />
-						<i className="fab fa-html5 fa-md" />
-					</div>
-				</a>
+				<div className="pressed project">
+					<h3>Pressed Juicery</h3>
+					<p>Full Stack Engineer</p>
+					<i className="fab fa-js fa-md techItem" />
+					<i className="fab fa-vuejs fa-md techItem" />
+					<i className="fab fa-sass fa-md techItem" />
+					<i className="fab fa-html5 fa-md techItem" />
+					<i className="fab fa-css3 fa-md techItem" />
 
-				<a
-					href="https://time-blocking-tool.now.sh/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="time project">
-						<h3>Time Blocking Tool</h3>
-						<p>Personal Project</p>
-						<i className="fab fa-js fa-md" />
-						<i className="fab fa-react fa-md" />
-						<i className="fab fa-sass fa-md" />
-						<i className="fab fa-html5 fa-md" />
-						<i className="fab fa-node-js fa-md" />
+					<div className="hiddenContent">
+						<h4>Description</h4>
+						<p>
+							To provide the best customer experience and create a
+							rewards system that could be used in-store, Pressed
+							Juicery started an internal development team to
+							build a mobile app. Something akin to the Starbucks
+							app.
+						</p>
+						<h4>What do I do?</h4>
+						<p>
+							Working as a full stack engineer I'm building out
+							components and pages of the mobile app with Vue and
+							GraphQL on the mobile web app, and Storybook for the
+							component library.
+						</p>
 					</div>
-				</a>
-				<a
-					href="https://www.npmjs.com/package/purecrypt"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="purecrypt project">
-						<h3>Purecrypt</h3>
-						<p>Package Author</p>
-						<i className="fab fa-js fa-md" />
-						<i className="fab fa-node-js fa-md" />
+
+					<div className="buttonGroup">
+						<a href="/pressed" className="visitButton">
+							Visit
+						</a>
+						<a
+							className="githubButton"
+							href="https://github.com/Pressed-Juicery"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-github fa-md" />
+							Github
+						</a>
 					</div>
-				</a>
+				</div>
+				<div className="wells project">
+					<h3>Wells Upholstery</h3>
+					<p>Acting CTO</p>
+					<i className="fab fa-js fa-md techItem" />
+					<i className="fab fa-react fa-md techItem" />
+					<i className="fab fa-sass fa-md techItem" />
+					<i className="fab fa-html5 fa-md techItem" />
+
+					<div className="hiddenContent">
+						<h4>Description</h4>
+						<p>
+							Wells Upholstery has an ambitious goal, to be a 100
+							year company and change the upholstery industry. To
+							do that the team needed to create technical
+							infrastructure that will assist in that mission.
+						</p>
+						<h4>What do I do?</h4>
+						<p>
+							As acting CTO I'm leading development of a new web
+							interface for internal and external use. Current
+							objectives for the site are to showcase current
+							projects, create a project portal for clients to
+							stay up-to-date, and to drive inbound marketing with
+							a blog.
+						</p>
+					</div>
+
+					<div className="buttonGroup">
+						<a
+							href="https://wellsupholstery.now.sh/"
+							target="_blank"
+							rel="noreferrer"
+							className="visitButton"
+						>
+							Visit
+						</a>
+						<a
+							className="githubButton"
+							href="https://github.com/vinnihoke/wellsupholstery"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-github fa-md" />
+							Github
+						</a>
+					</div>
+				</div>
+				<div className="time project">
+					<h3>Time Blocking Tool</h3>
+					<p>Personal Project</p>
+					<i className="fab fa-js fa-md techItem" />
+					<i className="fab fa-react fa-md techItem" />
+					<i className="fab fa-sass fa-md techItem" />
+					<i className="fab fa-html5 fa-md techItem" />
+					<i className="fab fa-node-js fa-md techItem" />
+
+					<div className="hiddenContent">
+						<h4>Description</h4>
+						<p>
+							During the global pandemic I noticed many (newly
+							remote) friends and family struggling to manage
+							their daily schedule outside of the office. I
+							created the Time Blocking tool as a way to help
+							people setup a schedule and practice better time
+							management at home.
+						</p>
+						<h4>What did I do?</h4>
+						<p>
+							Everything from planning to development was
+							completed by myself. I have future plans to modify
+							the experience and add more features to improve the
+							value for users.
+						</p>
+					</div>
+
+					<div className="buttonGroup">
+						<a
+							href="https://time-blocking-tool.now.sh/"
+							target="_blank"
+							rel="noreferrer"
+							className="visitButton"
+						>
+							Visit
+						</a>
+						<a
+							className="githubButton"
+							href="https://github.com/vinnihoke/time-blocking-tool"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-github fa-md" />
+							Github
+						</a>
+					</div>
+				</div>
+				<div className="purecrypt project">
+					<h3>Purecrypt</h3>
+					<p>Package Author</p>
+					<i className="fab fa-js fa-md techItem" />
+					<i className="fab fa-node-js fa-md techItem" />
+
+					<div className="hiddenContent">
+						<h4>Description</h4>
+						<p>
+							As a Lambda School student during a team project, we
+							ran into a situation that required basic string
+							encryption, decryption, and validation. The existing
+							tools felt like overkill so I decided to write a NPM
+							package that everyone could use.
+						</p>
+						<h4>What did I do?</h4>
+						<p>
+							I set out with a goal to keep the package as light
+							as possible, and to provide the simplist user
+							experience and setup. The entirety of the project is
+							built with Node.js and has a single dependency.
+						</p>
+					</div>
+
+					<div className="buttonGroup">
+						<a
+							href="https://www.npmjs.com/package/purecrypt"
+							target="_blank"
+							rel="noreferrer"
+							className="visitButton"
+						>
+							Visit
+						</a>
+						<a
+							className="githubButton"
+							href="https://github.com/vinnihoke/purecrypt"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="fab fa-github fa-md" />
+							Github
+						</a>
+					</div>
+				</div>
 			</div>
-			{/*
-			<div className="portfolio">
-				<Portfolio />
-			</div>
-			*/}
 		</div>
 	);
 }
