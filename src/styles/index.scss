@@ -5,27 +5,34 @@
 // Helper tags
 body,
 html {
-	font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', sans-serif;
-	height: 100%;
-	width: 100%;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', sans-serif;
+  height: 100%;
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
 }
 
 h1 {
-	font-size: 3rem;
-	font-weight: bolder;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 h2 {
-	font-size: 3rem;
-	font-weight: bolder;
-	text-decoration: underline $pop;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-decoration: underline $pop;
 }
 
 h3 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-	font-size: 1.25rem;
-	font-weight: bolder;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

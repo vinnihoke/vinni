@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+.top {
+  height: 50vh;
+  background-color: green;
+  color: white;
+  display: grid;
+  align-items: center;
+}
+
+.info {
+  @include container();
+}
+
+.image {
+  height: 50vh;
+  background-image: url(../../images/pressed-juicery.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: $mobile) {
+  .info {
+    width: 50%;
+  }
+}

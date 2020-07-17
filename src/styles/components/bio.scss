@@ -2,44 +2,118 @@
 
 .introduction,
 .technologies,
-.portfolio {
-	@include container();
+.portfolio,
+.projects {
+  @include container();
 }
 
 .introduction {
-	padding-top: 120px;
-	grid-template-columns: 1fr 1fr;
-	grid-row-gap: 64px;
+  padding-top: 200px;
+  // grid-template-columns: 1fr 1fr;
+  // grid-row-gap: 64px;
+}
+
+.greyWrapper {
+  margin: 32px 0;
+  background-color: #fafafa;
 }
 
 .technologies {
-	padding: 64px 0;
+  padding: 64px 0;
 }
 
 .fourgroup {
-	grid-template-columns: repeat(4, 1fr);
-	padding: 32px 0;
-	justify-items: center;
-	grid-row-gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 32px 0;
+  justify-items: center;
+  grid-row-gap: 32px;
+}
+
+.otherSkills {
+  border-radius: 5px;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 5px 15px lightgray;
+  margin-top: 16px;
+  column-count: 3;
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .fourgroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .otherSkills {
+    column-count: 2;
+  }
 }
 
 .introduction,
 .fourgroup {
-	display: grid;
-	grid-column-gap: 24px;
+  display: grid;
+  grid-column-gap: 24px;
 }
 
 .bio {
-	clip-path: polygon(0 150px, 100% 0px, 100% 100%, 0% 100%);
-	background-color: $white;
-	margin-top: 400px;
+  clip-path: polygon(0 150px, 100% 0px, 100% 100%, 0% 100%);
+  background-color: $white;
+  margin-top: 400px;
 }
 
 .title {
-	text-align: right;
+  margin-bottom: 8px;
 }
 
-.intro,
-.title {
-	grid-column-start: 2;
+.intro {
+  margin-bottom: 32px;
+}
+
+.statement {
+  max-width: 700px;
+}
+
+.project {
+  padding: 32px 0;
+  height: 150px;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 24px;
+  box-shadow: 0px 5px 15px $light;
+  transition: 200ms;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 10px 15px 5px silver;
+  }
+}
+
+.wells,
+.pressed,
+.time,
+.purecrypt {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wells {
+  background-color: gold;
+}
+
+.pressed {
+  background-color: green;
+  color: white;
+}
+
+.time {
+  background-color: dodgerblue;
+  color: white;
+}
+.purecrypt {
+  background-color: red;
+  color: white;
 }
