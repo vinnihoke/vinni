@@ -12,12 +12,8 @@ html {
   margin: 0 auto;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
-  overflow: auto;
+  overscroll-behavior-y: none;
 }
 
 h1 {
