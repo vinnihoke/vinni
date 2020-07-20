@@ -55,27 +55,41 @@ export default function Bio() {
 					<div className="hiddenContent">
 						<h4>Description</h4>
 						<p>
-							To provide the best customer experience and create a
-							rewards system that could be used in-store, Pressed
-							Juicery started an internal development team to
-							build a mobile app. Something akin to the Starbucks
-							app.
+							Pressed Juicery is building a mobile app to increase
+							customer engagement and to add shopping rewards.
 						</p>
-						<h4>What do I do?</h4>
-						<p>
-							Working as a full stack engineer I'm building out
-							components and pages of the mobile app with Vue and
-							GraphQL on the mobile web app, and Storybook for the
-							component library.
-						</p>
+						<h4>Responsibilities</h4>
+						<ul>
+							<li>
+								<p>
+									Developing components and views for the
+									mobile web app
+								</p>
+							</li>
+							<li>
+								<p>
+									Collaborating with director of engineering
+									to improve user experience and design
+								</p>
+							</li>
+						</ul>
+						<h4>Details</h4>
+						<ul>
+							<li>
+								<p>Remote and asynchronous development</p>
+							</li>
+							<li>
+								<p>
+									Components built in Storybook then used in
+									the mobile app
+								</p>
+							</li>
+						</ul>
 					</div>
 
 					<div className="buttonGroup">
-						<a href="/pressed" className="visitButton">
-							Visit
-						</a>
+						<a href="/pressed">Visit</a>
 						<a
-							className="githubButton"
 							href="https://github.com/Pressed-Juicery"
 							target="_blank"
 							rel="noreferrer"
@@ -101,15 +115,45 @@ export default function Bio() {
 							do that the team needed to create technical
 							infrastructure that will assist in that mission.
 						</p>
-						<h4>What do I do?</h4>
-						<p>
-							As acting CTO I'm leading development of a new web
-							interface for internal and external use. Current
-							objectives for the site are to showcase current
-							projects, create a project portal for clients to
-							stay up-to-date, and to drive inbound marketing with
-							a blog.
-						</p>
+						<h4>Responsibilites</h4>
+						<ul>
+							<li>
+								<p>
+									As acting CTO I'm leading development of a
+									new web interface for internal and external
+									use
+								</p>
+							</li>
+							<li>
+								<p>Create objectives for future growth</p>
+							</li>
+							<li>
+								<p>
+									Current plans include a showcase current
+									projects, development of a project portal
+									for their clients to stay up-to-date, and a
+									blog to drive inbound marketing
+								</p>
+							</li>
+						</ul>
+						<h4>Details</h4>
+						<ul>
+							<li>
+								<p>
+									Architected a professional code environment
+									and enforcing a team engineering standard
+								</p>
+							</li>
+							<li>
+								<p>Componentized to allow for future plans</p>
+							</li>
+							<li>
+								<p>
+									Built for scale and reliability to meet
+									client expetations
+								</p>
+							</li>
+						</ul>
 					</div>
 
 					<div className="buttonGroup">
@@ -117,12 +161,10 @@ export default function Bio() {
 							href="https://wellsupholstery.now.sh/"
 							target="_blank"
 							rel="noreferrer"
-							className="visitButton"
 						>
 							Visit
 						</a>
 						<a
-							className="githubButton"
 							href="https://github.com/vinnihoke/wellsupholstery"
 							target="_blank"
 							rel="noreferrer"
@@ -151,13 +193,39 @@ export default function Bio() {
 							people setup a schedule and practice better time
 							management at home.
 						</p>
-						<h4>What did I do?</h4>
-						<p>
-							Everything from planning to development was
-							completed by myself. I have future plans to modify
-							the experience and add more features to improve the
-							value for users.
-						</p>
+						<h4>Responsibilities</h4>
+						<ul>
+							<li>
+								<p>
+									Built to give users a way to define a daily
+									schedule/routine
+								</p>
+							</li>
+							<li>
+								<p>
+									Designed to be familiar, easy to use, and
+									valuable
+								</p>
+							</li>
+							<li>
+								<p>
+									Architected and developed entirely by myself
+								</p>
+							</li>
+						</ul>
+						<h4>Details</h4>
+						<ul>
+							<li>
+								<p>Minimum viable product built in two weeks</p>
+							</li>
+							<li>
+								<p>
+									Future plans include better categorization
+									of tasks, group scheduling with friends, and
+									the ability to share time blocks
+								</p>
+							</li>
+						</ul>
 					</div>
 
 					<div className="buttonGroup">
@@ -165,12 +233,10 @@ export default function Bio() {
 							href="https://time-blocking-tool.now.sh/"
 							target="_blank"
 							rel="noreferrer"
-							className="visitButton"
 						>
 							Visit
 						</a>
 						<a
-							className="githubButton"
 							href="https://github.com/vinnihoke/time-blocking-tool"
 							target="_blank"
 							rel="noreferrer"
@@ -195,13 +261,34 @@ export default function Bio() {
 							I decided to write a NPM package that everyone could
 							use.
 						</p>
-						<h4>What did I do?</h4>
-						<p>
-							I set out with a goal to keep the package as light
-							as possible, and to provide the simplist user
-							experience and setup. The entirety of the project is
-							built with Node.js and has a single dependency.
-						</p>
+						<h4>Responsibilities</h4>
+						<ul>
+							<li>
+								<p>
+									Create a tool that included features of much
+									larger packages in a smaller, more friendly
+									package
+								</p>
+							</li>
+							<li>
+								<p>
+									Architected to be lightweight, reliable, and
+									useful
+								</p>
+							</li>
+						</ul>
+						<h4>Details</h4>
+						<ul>
+							<li>
+								<p>Designed with simplicity in mind</p>
+							</li>
+							<li>
+								<p>
+									Developed using a single dependency and
+									built in Node tools
+								</p>
+							</li>
+						</ul>
 					</div>
 
 					<div className="buttonGroup">
@@ -209,12 +296,10 @@ export default function Bio() {
 							href="https://www.npmjs.com/package/purecrypt"
 							target="_blank"
 							rel="noreferrer"
-							className="visitButton"
 						>
 							Visit
 						</a>
 						<a
-							className="githubButton"
 							href="https://github.com/vinnihoke/purecrypt"
 							target="_blank"
 							rel="noreferrer"

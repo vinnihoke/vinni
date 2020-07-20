@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import '../styles/index.scss';
 import Bio from '../components/Bio';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Index() {
 	return (
@@ -17,6 +18,7 @@ export default function Index() {
 			<section id="Entry">
 				<Header />
 				<Bio />
+				<Footer />
 			</section>
 		</main>
 	);

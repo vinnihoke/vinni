@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+.root {
+  display: grid;
+  place-items: center;
+  margin: 125px 0;
+}
+
+.content {
+  text-align: center;
+}
+
+.buttonGroup {
+  margin-top: 32px;
+}
+
+.button {
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: inherit;
+
+  i {
+    margin-right: 8px;
+  }
+}
