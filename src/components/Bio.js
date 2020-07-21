@@ -56,7 +56,7 @@ export default function Bio() {
 			team needs to create the technical infrastructure
 			and tools required to achieve that mission.`,
 			responsibilities: [
-				`As acting CTO I'm leading the development of
+				`Leading the development of
 				a new web interface for internal and
 				external use`,
 				`Create objectives for future growth and
