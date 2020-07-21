@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/components/header.scss';
+import styles from '../styles/header.module.scss';
 
 export default function Header() {
 	return (
-		<section className="header">
-			<div className="headerPhoto" />
+		<section className={styles.header}>
+			<div className={styles.headerPhoto} />
 		</section>
 	);
 }

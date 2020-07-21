@@ -1,7 +1,7 @@
-@import '../index.scss';
+@import './index.scss';
 
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   max-width: 998px;
@@ -10,7 +10,7 @@
 
 .headerPhoto {
   /* The image used */
-  background-image: url('../../images/portfolio-site-header.jpg');
+  background-image: url('../images/portfolio-site-header.jpg');
 
   /* Full height */
   height: 600px;

@@ -1,8 +1,8 @@
-@import '../index.scss';
+@import './index.scss';
 
 .top {
   height: 50vh;
-  background-color: green;
+  background-color: mediumseagreen;
   color: white;
   display: grid;
   align-items: center;
@@ -22,7 +22,7 @@
 
 .image {
   height: 50vh;
-  background-image: url(../../images/pressed-juicery.jpg);
+  background-image: url(../images/pressed-juicery.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

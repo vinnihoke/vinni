@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import '../styles/components/pressed.scss';
+import styles from '../styles/pressed.module.scss';
 
 export default function Pressed() {
 	return (
-		<main className="root">
+		<main className={styles.root}>
 			<Helmet>
 				<title>Vinni Hoke - Full Stack Engineer</title>
 				<script
@@ -12,8 +12,8 @@ export default function Pressed() {
 					crossOrigin="anonymous"
 				/>
 			</Helmet>
-			<div className="top">
-				<div className="info">
+			<div className={styles.top}>
+				<div className={styles.info}>
 					<a href="/">
 						<i className="fas fa-arrow-circle-left fa-lg" />
 					</a>
@@ -31,7 +31,7 @@ export default function Pressed() {
 					</div>
 				</div>
 			</div>
-			<div className="image" />
+			<div className={styles.image} />
 		</main>
 	);
 }
