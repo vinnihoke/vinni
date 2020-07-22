@@ -147,9 +147,9 @@ export default function Bio() {
 				<p className={styles.statement}>
 					👋 My name is Vinni. In 2016 I made a decision to dedicate
 					my waking hours to becoming a software engineer and slowly
-					began learning to code and build high quality projec. I've
-					long had the desire to create a positive impact on a global
-					scale.
+					began learning to code and building high quality projects.
+					I've long had the desire to create a positive impact on a
+					global scale, and technology has become my means to do so.
 				</p>
 			</div>
 			<CallToAction />
