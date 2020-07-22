@@ -1,26 +1,27 @@
 @import './index.scss';
 
 .header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  max-width: 998px;
-  margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	max-width: 998px;
+	margin: 0 auto;
 }
 
 .headerPhoto {
-  /* The image used */
-  background-image: url('../images/portfolio-site-header.jpg');
+	/* The image used */
+	background-image: url('../images/portfolio-site-header.jpg');
 
-  /* Full height */
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	/* Full height */
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @media screen and (max-width: $mobile) {
-  .headerPhoto {
-    background-position: left;
-  }
+	.headerPhoto {
+		background-position: left;
+		height: 350px;
+	}
 }

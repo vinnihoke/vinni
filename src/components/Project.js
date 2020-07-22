@@ -15,9 +15,12 @@ export default function Project(props) {
 
 	return (
 		<div
+			role="button"
+			tabIndex={0}
 			className={styles.project}
 			style={root}
 			onClick={() => setShow(!show)}
+			onKeydown={() => setShow(!show)}
 		>
 			<h3>{data.title}</h3>
 			<p>{data.role}</p>
@@ -49,7 +52,11 @@ export default function Project(props) {
 				</ul>
 			</div>
 			<div className={styles.buttonGroup}>
-				<a href={data.visitedUrl}>Visit</a>
+				{data.visitedUrl ? (
+					<a href={data.visitedUrl}>Visit</a>
+				) : (
+					<div>In Development</div>
+				)}
 				<a href={data.githubUrl} target="_blank" rel="noreferrer">
 					<i className="fab fa-github fa-md" />
 					Github

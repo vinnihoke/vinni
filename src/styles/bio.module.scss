@@ -4,30 +4,46 @@
 .technologies,
 .portfolio,
 .projects {
-  @include container();
+	@include container();
 }
 
 .introduction {
-  padding-top: 200px;
-  // grid-template-columns: 1fr 1fr;
-  // grid-row-gap: 64px;
+	padding-top: 170px;
 }
 
 .bio {
-  clip-path: polygon(0 150px, 100% 0px, 100% 100%, 0% 100%);
-  background-color: $white;
-  margin-top: 400px;
-  padding-bottom: 24px;
+	clip-path: polygon(0 150px, 100% 0px, 100% 100%, 0% 100%);
+	background-color: $white;
+	margin-top: 300px;
 }
 
-.title {
-  margin-bottom: 8px;
+.contentCentered {
+	text-align: center;
+	margin: 16px 0;
 }
 
 .intro {
-  margin-bottom: 32px;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	max-width: 500px;
+	align-items: flex-start;
 }
 
 .statement {
-  max-width: 700px;
+	max-width: 700px;
+}
+
+.projects {
+	margin-bottom: 64px;
+}
+
+@media screen and (max-width: $mobile) {
+	.bio {
+		margin-top: 200px;
+	}
+
+	.introduction {
+		padding-top: 140px;
+	}
 }

@@ -4,47 +4,47 @@
 // Helper tags
 body,
 html {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', sans-serif;
-  height: 100%;
-  width: 100%;
-  max-width: $desktop;
-  margin: 0 auto;
+	font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', sans-serif;
+	height: 100%;
+	width: 100%;
+	max-width: $desktop;
+	margin: 0 auto;
 }
 
 body {
-  overscroll-behavior-y: none;
-  background-color: white;
+	overscroll-behavior-y: none;
+	background-color: white;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin-bottom: 24px;
+	font-size: 3rem;
+	font-weight: bolder;
+	margin-bottom: 8px;
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: bolder;
-  text-decoration: underline $pop;
-  margin-bottom: 24px;
+	font-size: 3rem;
+	font-weight: bolder;
+	text-decoration: underline $pop;
+	margin-bottom: 8px;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
 }
 
 h4 {
-  font-size: 1.25rem;
-  font-weight: bolder;
-  margin-bottom: 8px;
+	font-size: 1.25rem;
+	font-weight: bolder;
+	margin-bottom: 8px;
 }
 
 p {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }

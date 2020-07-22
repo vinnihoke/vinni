@@ -23,7 +23,7 @@ export default function Bio() {
 		    engineering team to build a mobile app. The goal is
 		    to increase customer engagement and add shopping
 		    rewards, therefore greatly increasing the customer
-		    experince.`,
+		    experience.`,
 			responsibilities: [
 				`Developing components and views for the
 		    mobile web app`,
@@ -36,7 +36,6 @@ export default function Bio() {
 				`Components built in Storybook to be used in
 		    the mobile app`,
 			],
-			visitedUrl: '/pressed',
 			githubUrl: 'https://github.com/Pressed-Juicery',
 		},
 		{
@@ -146,19 +145,26 @@ export default function Bio() {
 					<h4>Full Stack Engineer</h4>
 				</div>
 				<p className={styles.statement}>
-					👋 My name is Vinni. I'm a Full Stack Engineer engineer who
-					loves using technology to solve complex challenges at scale.
-					Looking to impact a cross-functional, diversified team with
-					my unique skillset and background.
+					👋 My name is Vinni. In 2016 I made a decision to dedicate
+					my waking hours to becoming a software engineer and slowly
+					began learning to code and build high quality projec. I've
+					long had the desire to create a positive impact on a global
+					scale.
 				</p>
 			</div>
 			<CallToAction />
+			<div className={styles.contentCentered}>
+				<i className="fas fa-chevron-down" />
+			</div>
 			<Tech />
 			<div className={styles.projects}>
 				<h3>Projects and Experience</h3>
 				{projects.map((data, index) => (
 					<Project data={data} key={index} />
 				))}
+			</div>
+			<div className={styles.contentCentered}>
+				Made with <i className="fas fa-heart" /> by Vinni Hoke
 			</div>
 		</div>
 	);
